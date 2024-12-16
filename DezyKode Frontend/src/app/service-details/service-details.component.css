@@ -1,0 +1,6 @@
+.bullet-points li {
+  margin-bottom: 8px;
+  list-style-type: square;
+  padding-left: 20px;
+  margin-left: 20px;
+}

@@ -1,0 +1,81 @@
+a .whatsap {
+  color: white !important;
+  text-decoration: none;
+}
+
+a .whatsapp:hover {
+  color: white !important;
+  text-decoration: none;
+}
+.spinner-btn {
+  transition: all 0.3s ease;
+}
+
+.btn-black-2 {
+  padding: 12px 24px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.15s ease-in-out;
+  background-color: #0000;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #47b2e4;
+  border: #47b2e4;
+}
+.float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 65px;
+  /* left: 13px; */
+  right: 13px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float1 {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 118px;
+  right: 13px;
+  background-color: #0695d8;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 13px;
+}
+
+.phone {
+  position: fixed;
+  /* left: 44px; */
+  position: fixed;
+  width: 64px;
+  height: 45px;
+  bottom: 124px;
+  left: 11px;
+  color: #fff;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.mobile-icon {
+  margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .hide-desktop {
+    display: none;
+  }
+}

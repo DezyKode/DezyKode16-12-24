@@ -1,0 +1,132 @@
+<section
+  class="page-title-area d-flex align-items-end"
+  style="background-image: url(assets/img/page-title-bg/CourseD.jpg)"
+>
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="col-lg-12">
+        <div class="page-title-wrapper mb-50">
+          <h1 class="page-title mb-25">Training & Internship Details</h1>
+          <div class="breadcrumb-list">
+            <ul class="breadcrumb">
+              <li><a routerLink="/home">Home -</a></li>
+              <li><a routerLink="/courses">Training & Internship -</a></li>
+              <li><a routerLink="course-detail">Details</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  class="course-details-area pt-60 pb-50 pt-md-100 pb-md-70 pt-xs-40 pb-xs-40"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-12 col-xl-7">
+        <div class="courses-details-wrapper mb-30">
+          <h2 class="courses-title mb-30">
+            {{ courseDetails.title }}
+          </h2>
+
+          <div class="course-details-img mb-30">
+            <img
+              [src]="courseDetails.imgUrl"
+              alt="{{ courseDetails.title }}"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-5">
+        <div class="learn-area mb-30"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-7">
+        <div class="project-details mb-20">
+          <h2 class="courses-title mb-30">
+            {{ courseDetails.title }}
+          </h2>
+          <p>
+            {{ courseDetails.description }}
+          </p>
+          <br />
+          <h5>Key Aspects of User Experience (UX)</h5>
+          <ul class="bullet-points mt-4">
+            <li *ngFor="let point of courseDetails.bulletPoints">
+              {{ point }}
+            </li>
+          </ul>
+          <br />
+          <h5>Key Aspects in User Interface (UI)</h5>
+          <ul class="bullet-points mt-4">
+            <li *ngFor="let point of courseDetails.bulletPoints2">
+              {{ point }}
+            </li>
+          </ul>
+
+          <li class="mt-4">
+            <img
+              src="assets/img/icon/calendar.png"
+              alt="No Image"
+              height="50px"
+              width="50px"
+            />
+            Day of The Week
+            <div class="star-icon mb-10 calender">
+              <button class="btnCal">S</button>
+              <button class="disabledColor" disabled>M</button>
+              <button class="disabledColor" disabled>T</button>
+              <button class="disabledColor" disabled>W</button>
+              <button class="disabledColor" disabled>T</button>
+              <button class="disabledColor" disabled>F</button>
+              <button class="btnCal">S</button>
+            </div>
+          </li>
+
+          <li
+            class="seller-rating d-md-inline-flex align-items-center mt-20 mb-10"
+          >
+            <a href="#" class="theme_btn mb-10">Book your seat</a>
+          </li>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-5">
+        <div class="courses-ingredients">
+          <h2 class="corses-title mb-30">Internship Includes</h2>
+          <p>
+            Internships provide an opportunity to gain hands-on experience and
+            build professional skills in a real-world setting. Here's what a
+            typical internship includes.
+          </p>
+          <ul class="courses-item mt-25">
+            <li>
+              <img src="assets/img/icon/pd.svg" alt="" /> Personality
+              Development
+            </li>
+            <li>
+              <img src="assets/img/icon/inter.svg" alt="" /> Mock Interviews
+            </li>
+            <li>
+              <img src="assets/img/icon/resume.svg" alt="" /> Resume Building
+            </li>
+            <li>
+              <img src="assets/img/icon/project.svg" alt="" /> Hands-on Projects
+            </li>
+            <li>
+              <img src="assets/img/icon/placement.svg" alt="" /> 100% Placement
+              Assistance
+            </li>
+            <li>
+              <img src="assets/img/icon/cert.svg" alt="" /> Professional
+              Certificate of Completion
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

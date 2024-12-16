@@ -1,0 +1,424 @@
+<main>
+  <!--page-title-area start-->
+  <section
+    class="page-title-area d-flex align-items-end"
+    style="background-image: url(assets/img/page-title-bg/BlogD.jpg)"
+  >
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-lg-12">
+          <div class="page-title-wrapper mb-50">
+            <h1 class="page-title mb-25">Blog Details</h1>
+            <div class="breadcrumb-list">
+              <ul class="breadcrumb">
+                <li><a routerLink="/home">Home -</a></li>
+                <li><a routerLink="/blog">Blog -</a></li>
+                <li><a routerLink="/blog-detail">Blog Details</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--page-title-area end-->
+  <!-- blog-details-area start -->
+  <section
+    class="blog-details-area pt-50 pb-50 pt-md-100 pb-md-55 pt-xs-40 pb-xs-40"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="blog-details-box mb-45">
+            <h2>{{ blogDetails.title }}</h2>
+            <img
+              [src]="blogDetails.imgUrl"
+              alt="{{ blogDetails.title }}"
+              class="img-fluid"
+            />
+
+            <h3 class="blog-details-title mb-30">
+              {{ blogDetails.heading }}
+
+              <h3>
+                {{ blogDetails.descux }}
+              </h3>
+            </h3>
+            <h3>
+              {{ blogDetails.des }}
+            </h3>
+            <p>
+              {{ blogDetails.description7 }}
+              {{ blogDetails.description1 }}
+            </p>
+
+            <p class="mb-30" [innerHTML]="blogDetails.description"></p>
+
+            <h1 class="blog-details-title mb-30">
+              {{ blogDetails.title2 }}
+              {{ blogDetails.heading2 }}
+              {{ blogDetails.title7 }}
+              {{ blogDetails.Liheading1 }}
+            </h1>
+
+            <div class="mb-30">
+              <p>
+                {{ blogDetails.description8 }}
+                {{ blogDetails.description13 }}
+              </p>
+              <p [innerHTML]="blogDetails.L1"></p>
+              <p [innerHTML]="blogDetails.L2"></p>
+            </div>
+
+            <h1 class="blog-details-title mb-30">
+              <h4>{{ blogDetails.heading3 }}</h4>
+              {{ blogDetails.title3 }}
+              {{ blogDetails.title8 }}
+              {{ blogDetails.Liheading2 }}
+            </h1>
+
+            <h4 class="blog-details-title mb-30">
+              <p>
+                <b>
+                  {{ blogDetails.desc }}
+                </b>
+                {{ blogDetails.description9 }}
+              </p>
+              <p [innerHTML]="blogDetails.description2"></p>
+              <p>
+                {{ blogDetails.description14 }}
+              </p>
+              <p [innerHTML]="blogDetails.L3"></p>
+              <p [innerHTML]="blogDetails.L4"></p>
+              <p [innerHTML]="blogDetails.L5"></p>
+              <p [innerHTML]="blogDetails.L6"></p>
+            </h4>
+
+            <h1 class="blog-details-title mb-30">
+              {{ blogDetails.title4 }}
+              {{ blogDetails.heading4 }}
+              {{ blogDetails.title9 }}
+              {{ blogDetails.Liheading3 }}
+            </h1>
+
+            <div class="mb-30">
+              <p [innerHTML]="blogDetails.description3"></p>
+              <p>
+                {{ blogDetails.description10 }}
+                {{ blogDetails.description15 }}
+              </p>
+              <p [innerHTML]="blogDetails.L7"></p>
+              <p [innerHTML]="blogDetails.L8"></p>
+              <p [innerHTML]="blogDetails.L9"></p>
+              <p [innerHTML]="blogDetails.L10"></p>
+            </div>
+
+            <h1 class="blog-details-title mb-30">
+              {{ blogDetails.title5 }}
+              {{ blogDetails.heading5 }}
+              {{ blogDetails.title10 }}
+              {{ blogDetails.Liheading4 }}
+            </h1>
+
+            <h1 class="blog-details-title mb-30">
+              <p>
+                <b>
+                  {{ blogDetails.desc2 }}
+                </b>
+              </p>
+
+              <p [innerHTML]="blogDetails.description4"></p>
+              <p>
+                {{ blogDetails.description11 }}
+                {{ blogDetails.description16 }}
+              </p>
+              <p [innerHTML]="blogDetails.L11"></p>
+              <p [innerHTML]="blogDetails.L12"></p>
+              <p [innerHTML]="blogDetails.L13"></p>
+            </h1>
+
+            <h1 class="blog-details-title mb-30">
+              <p>
+                <b>
+                  {{ blogDetails.desc3 }}
+                </b>
+              </p>
+              <p [innerHTML]="blogDetails.description5"></p>
+              {{ blogDetails.title6 }}
+              {{ blogDetails.title11 }}
+              {{ blogDetails.Liheading5 }}
+            </h1>
+
+            <h1 class="blog-details-title mb-30">
+              {{ blogDetails.heading6 }}
+              <p>
+                {{ blogDetails.description12 }}
+                {{ blogDetails.description17 }}
+              </p>
+              <p [innerHTML]="blogDetails.L14"></p>
+              <p [innerHTML]="blogDetails.L15"></p>
+              <p [innerHTML]="blogDetails.L16"></p>
+            </h1>
+
+            <p>
+              {{ blogDetails.description6 }}
+            </p>
+
+            <h1 class="blog-details-title mb-30">
+              {{ blogDetails.title12 }}
+              {{ blogDetails.Liheading6 }}
+            </h1>
+
+            <div class="mb-30">
+              <p>
+                {{ blogDetails.description18 }}
+              </p>
+              <p [innerHTML]="blogDetails.L17"></p>
+              <p [innerHTML]="blogDetails.L18"></p>
+              <p [innerHTML]="blogDetails.L19"></p>
+            </div>
+
+            <h1 class="blog-details-title mb-30">
+              {{ blogDetails.Liheading7 }}
+            </h1>
+
+            <div class="mb-30">
+              <p [innerHTML]="blogDetails.L20"></p>
+              <p [innerHTML]="blogDetails.L21"></p>
+              <p [innerHTML]="blogDetails.L22"></p>
+              <p [innerHTML]="blogDetails.L23"></p>
+            </div>
+          </div>
+
+          <div class="blog-details-text mb-30"></div>
+          <div class="blog-details-text row gx-2 mb-25">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="blog-details-img-box mb-30">
+                <img
+                  [src]="blogDetails.imgUrl2"
+                  alt="{{ blogDetails.title }}"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="blog-details-img-box mb-30">
+                <img
+                  [src]="blogDetails.imgUrl3"
+                  alt="{{ blogDetails.title }}"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="blog-details-img-box mb-30">
+                <img
+                  [src]="blogDetails.imgUrl4"
+                  alt="{{ blogDetails.title }}"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <div class="blog-quote-box mb-45">
+              <div class="quote-icon">
+                <img src="assets/img/icon/quote.svg" alt="quote-icon" />
+              </div>
+              <div class="quote__text">
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't look
+                  even slightly believable. If you are passage of Lorem Ipsum.
+                </p>
+                <h6>- Jason Statham</h6>
+              </div>
+            </div>
+          </div>
+          <div class="blog-details-video">
+            <ul class="blog-details-list mt-30"></ul>
+          </div>
+          <div class="blog-details-gallery row gx-2 mb-45">
+            <div class="col-lg-8 col-md-8">
+              <div class="blog-details-img-box mb-30">
+                <img
+                  [src]="blogDetails.imgUrl6"
+                  alt="{{ blogDetails.title }}"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="blog-details-img-box mb-30">
+                <img
+                  [src]="blogDetails.imgUrl5"
+                  alt="{{ blogDetails.title }}"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="comments-form-area mb-45">
+            <h2>Leave a comment</h2>
+            <form action="#" class="row comments-form">
+              <div class="col-lg-6 mb-20">
+                <input type="text" placeholder="Full Name" />
+              </div>
+              <div class="col-lg-6 mb-20">
+                <input type="text" placeholder="Email Name" />
+              </div>
+              <div class="col-lg-12 mb-20">
+                <textarea
+                  name="commnent"
+                  id="commnent"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write Your Comments"
+                ></textarea>
+              </div>
+            </form>
+            <button class="theme_btn comment_btn">Submit Comment</button>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-widget-area">
+            <div class="widget mb-50">
+              <div class="blog-categories-widget">
+                <h4 class="sub-title pb-20 mb-25 pt-25">Recent Post</h4>
+                <ul class="blog-recent-post">
+                  <li>
+                    <div class="posts mb-20">
+                      <img
+                        src="assets/img/blog/fileux.jpg"
+                        alt=""
+                        class="posts__thumb mb-15"
+                        routerLink="/blog"
+                      />
+                      <p>July 15 , 2023</p>
+                      <h6>
+                        <a routerLink="/blog"
+                          >Why I Choose a Career in UX/UI
+                        </a>
+                      </h6>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="posts mb-20">
+                      <img
+                        src="assets/img/blog/filetest.jpg"
+                        alt=""
+                        class="posts__thumb mb-15"
+                        routerLink="/blog"
+                      />
+                      <p>June 05 , 2023</p>
+                      <h6>
+                        <a routerLink="/blog">Transition to Software Testing</a>
+                      </h6>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="posts mb-20">
+                      <img
+                        src="assets/img/blog/fileweb.jpg"
+                        alt=""
+                        class="posts__thumb mb-15"
+                        routerLink="/blog"
+                      />
+                      <p>August 28 , 2023</p>
+                      <h6>
+                        <a routerLink="/blog">Why I Became a Web Developer</a>
+                      </h6>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="posts mb-20">
+                      <img
+                        src="assets/img/blog/filejava.jpg"
+                        alt=""
+                        class="posts__thumb mb-15"
+                        routerLink="/blog"
+                      />
+                      <p>September 30 , 2023</p>
+                      <h6>
+                        <a routerLink="/blog">Development Career in Java</a>
+                      </h6>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="posts mb-20">
+                      <img
+                        src="assets/img/blog/arrival.png"
+                        alt=""
+                        class="posts__thumb mb-15"
+                        routerLink="/blog"
+                      />
+
+                      <h6>
+                        <a routerLink="/blog">Launching Soon</a>
+                      </h6>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="posts mb-20">
+                      <img
+                        src="assets/img/blog/arrival.png"
+                        alt=""
+                        class="posts__thumb mb-15"
+                        routerLink="/blog"
+                      />
+
+                      <h6>
+                        <a routerLink="/blog">Launching Soon</a>
+                      </h6>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="posts mb-20">
+                      <img
+                        src="assets/img/blog/arrival.png"
+                        alt=""
+                        class="posts__thumb mb-15"
+                        routerLink="/blog"
+                      />
+
+                      <h6>
+                        <a routerLink="/blog">Launching Soon</a>
+                      </h6>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="posts mb-20">
+                      <img
+                        src="assets/img/blog/arrival.png"
+                        alt=""
+                        class="posts__thumb mb-15"
+                      />
+
+                      <h6>
+                        <a routerLink="/blog">Launching Soon</a>
+                      </h6>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="widget mb-50">
+              <h4 class="sub-title pb-20 mb-25 pt-25">Social Media</h4>
+              <div class="blog-social-widget">
+                <div class="social-media mb-30">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fas fa-basketball-ball"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

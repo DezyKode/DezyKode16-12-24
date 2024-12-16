@@ -1,0 +1,26 @@
+<div>
+  <app-header></app-header>
+
+  <div class="d-flex">
+    <a (click)="callPhoneNumber()" class="float1 hide-desktop" target="_blank">
+      <img
+        class="mobile-icon"
+        src="assets/img/telephone.png"
+        alt="quote-icon"
+      />
+    </a>
+    <a
+      class="whatsapp text-center align-self-center"
+      href="https://api.whatsapp.com/send?phone=919730822219&text=Hello%20from%20DEZYKODE!"
+      target="_blank"
+      class="float"
+    >
+      <i class="fab fa-whatsapp my-float"></i>
+    </a>
+  </div>
+
+  <!-- <app-home></app-home> -->
+  <router-outlet></router-outlet>
+  <app-subscribe></app-subscribe>
+  <app-footer></app-footer>
+</div>

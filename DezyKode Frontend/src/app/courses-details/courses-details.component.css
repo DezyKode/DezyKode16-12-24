@@ -1,0 +1,41 @@
+.calender {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.btnCal {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #f6ae22;
+  border: none;
+  color: #eeee;
+}
+
+.btnCal:hover {
+  /* border: 2px solid;
+    border-color:#272425; */
+  background-color: #272425;
+}
+
+.disabledColor {
+  background-color: #bc810c;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: #eeee;
+}
+.bullet-points li {
+  margin-bottom: 8px;
+  list-style-type: square;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.learn-list li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-left: 20px;
+}

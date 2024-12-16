@@ -1,0 +1,384 @@
+<section
+  class="page-title-area d-flex align-items-end"
+  style="background-image: url(assets/img/page-title-bg/ServiceD.jpg)"
+>
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="col-lg-12">
+        <div class="page-title-wrapper mb-50">
+          <h1 class="page-title mb-25">Services Details</h1>
+          <div class="breadcrumb-list">
+            <ul class="breadcrumb">
+              <li><a routerLink="/home">Home -</a></li>
+              <li><a routerLink="/services">Services -</a></li>
+              <li><a routerLink="/service-detail">Services Details</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  class="course-details-area pt-50 pb-50 pt-md-100 pb-md-70 pt-xs-40 pb-xs-40"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-8 col-xl-7">
+        <div class="courses-details-wrapper mb-30">
+          <h2 class="courses-title mb-30">
+            {{ courseDetails.title }}
+          </h2>
+
+          <div class="course-details-img mb-30">
+            <img
+              [src]="courseDetails.imgUrl"
+              alt="{{ courseDetails.title }}"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-5 d-sm-none d-md-block d-none text-center">
+        <div class="learn-area mb-30">
+          <div class="learn-box mt-5">
+            <h5>More Services we offer</h5>
+            <ul class="list-group">
+              <div class="row">
+                <li class="mb-3 col-5">
+                  <img
+                    src="assets/img/course/UIUX.svg"
+                    alt="UI/UX"
+                    height="100px"
+                    width="150px"
+                    class="mb-2 course"
+                    [routerLink]="['/service-detail', 1]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(1)"
+                  />
+                  <button
+                    class="list-group-item list-group-item-action mb-2"
+                    [routerLink]="['/service-detail', 1]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(1)"
+                  >
+                    UI/UX Design
+                  </button>
+                </li>
+                <li class="mb-3 col-5">
+                  <img
+                    src="assets/img/course/WebDesign.svg"
+                    alt="UI/UX"
+                    height="100px"
+                    width="150px"
+                    class="mb-2 course"
+                    [routerLink]="['/service-detail', 1]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(2)"
+                  />
+                  <button
+                    class="list-group-item list-group-item-action mb-2"
+                    [routerLink]="['/service-detail', 2]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(2)"
+                  >
+                    Web Design
+                  </button>
+                </li>
+              </div>
+              <div class="row">
+                <li class="mb-3 col-5">
+                  <img
+                    src="assets/img/course/WebDevelopment.svg"
+                    alt="UI/UX"
+                    height="100px"
+                    width="150px"
+                    class="mb-2 course"
+                    [routerLink]="['/service-detail', 1]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(3)"
+                  />
+                  <button
+                    class="list-group-item list-group-item-action mb-2"
+                    [routerLink]="['/service-detail', 3]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(3)"
+                  >
+                    Website Development
+                  </button>
+                </li>
+                <li class="mb-3 col-5">
+                  <img
+                    src="assets/img/course/MobileDevelopment.svg"
+                    alt="UI/UX"
+                    height="100px"
+                    width="150px"
+                    class="mb-2 course"
+                    [routerLink]="['/service-detail', 1]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(4)"
+                  />
+                  <button
+                    class="list-group-item list-group-item-action mb-2"
+                    [routerLink]="['/service-detail', 4]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(4)"
+                  >
+                    Android App Development
+                  </button>
+                </li>
+              </div>
+              <div class="row">
+                <li class="mb-3 col-5">
+                  <img
+                    src="assets/img/course/DigitalMarketing.svg"
+                    alt="UI/UX"
+                    height="100px"
+                    width="150px"
+                    class="mb-2 course"
+                    [routerLink]="['/service-detail', 1]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(5)"
+                  />
+                  <button
+                    class="list-group-item list-group-item-action mb-2"
+                    [routerLink]="['/service-detail', 5]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(5)"
+                  >
+                    Digital Marketing
+                  </button>
+                </li>
+                <li class="mb-3 col-5">
+                  <img
+                    src="assets/img/course/MobileDevelopment.svg"
+                    alt="UI/UX"
+                    height="100px"
+                    width="150px"
+                    class="mb-2 course"
+                    [routerLink]="['/service-detail', 1]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(6)"
+                  />
+                  <button
+                    class="list-group-item list-group-item-action"
+                    [routerLink]="['/service-detail', 6]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    (click)="reloadPage(6)"
+                  >
+                    IOS App Development
+                  </button>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-7">
+        <div class="project-details mb-20">
+          <h2 class="courses-title mb-30">
+            {{ courseDetails.title }}
+          </h2>
+          <p>
+            {{ courseDetails.description }}
+          </p>
+          <ul class="bullet-points mt-4">
+            <li *ngFor="let point of courseDetails.bulletPoints">
+              {{ point }}
+            </li>
+          </ul>
+          <div class="blog-quote-box mb-20">
+            <div class="quote-icon">
+              <img src="assets/img/icon/quote.svg" alt="quote-icon" />
+            </div>
+            <div class="quote__text">
+              <p>
+                {{ courseDetails.quote }}
+              </p>
+              <h6>- {{ courseDetails.author }}</h6>
+            </div>
+          </div>
+          <li
+            class="seller-rating d-md-inline-flex align-items-center mt-20 mb-10"
+          >
+            <a routerLink="/contact-us" class="theme_btn mb-10">Contact Us</a>
+          </li>
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-4">
+        <div class="courses-ingredients">
+          <h2 class="corses-title mb-30">Benefits We Offers</h2>
+          <p>{{ courseDetails.benefit }}</p>
+          <ul class="courses-item mt-25">
+            <li *ngFor="let point of courseDetails.point">
+              <img src="assets/img/icon/check.svg" alt="" />
+              {{ point }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="more-services d-lg-none d-sm-block d-md-none">
+  <div class="container text-center">
+    <div class="learn-box mt-5">
+      <h5>More Services we offer</h5>
+      <ul class="list-group">
+        <div class="row">
+          <li class="mb-3 col-5">
+            <img
+              src="assets/img/course/UIUX.svg"
+              alt="UI/UX"
+              height="100px"
+              width="150px"
+              class="mb-2 course"
+              [routerLink]="['/service-detail', 1]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(1)"
+            />
+            <button
+              class="list-group-item list-group-item-action mb-2"
+              [routerLink]="['/service-detail', 1]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(1)"
+            >
+              UI/UX Design
+            </button>
+          </li>
+          <li class="mb-3 col-5">
+            <img
+              src="assets/img/course/WebDesign.svg"
+              alt="Web Design"
+              height="100px"
+              width="150px"
+              class="mb-2 course"
+              [routerLink]="['/service-detail', 2]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(2)"
+            />
+            <button
+              class="list-group-item list-group-item-action mb-2"
+              [routerLink]="['/service-detail', 2]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(2)"
+            >
+              Web Design
+            </button>
+          </li>
+        </div>
+        <div class="row">
+          <li class="mb-3 col-5">
+            <img
+              src="assets/img/course/WebDevelopment.svg"
+              alt="Web Development"
+              height="100px"
+              width="150px"
+              class="mb-2 course"
+              [routerLink]="['/service-detail', 3]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(3)"
+            />
+            <button
+              class="list-group-item list-group-item-action mb-2"
+              [routerLink]="['/service-detail', 3]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(3)"
+            >
+              Website Development
+            </button>
+          </li>
+          <li class="mb-3 col-5">
+            <img
+              src="assets/img/course/MobileDevelopment.svg"
+              alt="Mobile Development"
+              height="100px"
+              width="150px"
+              class="mb-2 course"
+              [routerLink]="['/service-detail', 4]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(4)"
+            />
+            <button
+              class="list-group-item list-group-item-action mb-2"
+              [routerLink]="['/service-detail', 4]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(4)"
+            >
+              Android App Development
+            </button>
+          </li>
+        </div>
+        <div class="row">
+          <li class="mb-3 col-5">
+            <img
+              src="assets/img/course/DigitalMarketing.svg"
+              alt="Digital Marketing"
+              height="100px"
+              width="150px"
+              class="mb-2 course"
+              [routerLink]="['/service-detail', 5]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(5)"
+            />
+            <button
+              class="list-group-item list-group-item-action mb-2"
+              [routerLink]="['/service-detail', 5]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(5)"
+            >
+              Digital Marketing
+            </button>
+          </li>
+          <li class="mb-3 col-5">
+            <img
+              src="assets/img/course/MobileDevelopment.svg"
+              alt="IOS App Development"
+              height="100px"
+              width="150px"
+              class="mb-2 course"
+              [routerLink]="['/service-detail', 6]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(6)"
+            />
+            <button
+              class="list-group-item list-group-item-action"
+              [routerLink]="['/service-detail', 6]"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              (click)="reloadPage(6)"
+            >
+              IOS App Development
+            </button>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</section>

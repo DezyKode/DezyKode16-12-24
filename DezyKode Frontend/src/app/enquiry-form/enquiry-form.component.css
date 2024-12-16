@@ -1,0 +1,39 @@
+.gender-label {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.gender-label:hover {
+  background-color: #f1f1f1;
+}
+
+input[type="radio"]:checked + .gender-label {
+  background-color: #f6ae22;
+  color: #eeeeee;
+  border-color: #272425;
+}
+
+label {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form-select:focus {
+  border-color: #f6ae22;
+  outline: 0;
+  box-shadow: 0 0 0 0 rgba(246, 174, 34);
+}
+.form-select {
+  color: #707070; /* Matching the input field color */
+  font-size: 16px; /* Matching the input field font size */
+  height: 60px; /* Matching the input field height */
+  width: 100%; /* Full width */
+  border-radius: 5px; /* Matching the input field border-radius */
+  border: 1px solid rgba(112, 112, 112, 0.2); /* Matching the input field border style */
+  padding-left: 30px; /* Same padding as the input field */
+  display: inline-block; /* Consistent display style */
+  font-weight: 600;
+}

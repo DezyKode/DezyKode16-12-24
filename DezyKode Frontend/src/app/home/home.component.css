@@ -1,0 +1,47 @@
+.video-slider-area {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: relative;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5); /* Optional overlay for better readability */
+}
+
+.slider__content .main-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.slider__content h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-text i {
+  margin-right: 10px;
+  color: #f6ae22; /* Adjust the icon color */
+  margin-left: 30px;
+}

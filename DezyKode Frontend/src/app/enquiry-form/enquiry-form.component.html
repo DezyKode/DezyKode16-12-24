@@ -1,0 +1,279 @@
+<section
+  class="page-title-area d-flex align-items-end"
+  style="background-image: url(assets/img/page-title-bg/eq.jpg)"
+>
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="col-lg-12">
+        <div class="page-title-wrapper mb-50">
+          <h1 class="page-title mb-25">Enquire Now</h1>
+          <div class="breadcrumb-list">
+            <ul class="breadcrumb">
+              <li><a routerLink="/home">Home -</a></li>
+              <li><a routerLink="/enquiry">Enquire</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-lg-6 mt-50">
+      <div class="contact-form-wrapper mb-30">
+        <h2 class="mb-45">Enquiry Form</h2>
+        <form
+          [formGroup]="enquiryForm"
+          (ngSubmit)="onSubmit()"
+          class="row gx-3 comments-form contact-form"
+        >
+          <!-- First Name -->
+          <div class="col-lg-6 col-md-6 mb-30">
+            <input
+              id="firstName"
+              type="text"
+              formControlName="firstName"
+              placeholder="First Name"
+              required
+            />
+            <div
+              *ngIf="
+                enquiryForm.get('firstName')?.invalid &&
+                enquiryForm.get('firstName')?.touched
+              "
+              class="text-danger"
+            >
+              First Name is required.
+            </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="col-lg-6 col-md-6 mb-30">
+            <input
+              id="lastName"
+              type="text"
+              formControlName="lastName"
+              required
+              placeholder="Last Name"
+            />
+            <div
+              *ngIf="
+                enquiryForm.get('lastName')?.invalid &&
+                enquiryForm.get('lastName')?.touched
+              "
+              class="text-danger"
+            >
+              Last Name is required.
+            </div>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="col-lg-6 col-md-6 mb-30">
+            <input
+              id="phoneNumber"
+              type="text"
+              formControlName="phoneNumber"
+              required
+              placeholder="Phone Number"
+            />
+            <div
+              *ngIf="
+                enquiryForm.get('phoneNumber')?.invalid &&
+                enquiryForm.get('phoneNumber')?.touched
+              "
+              class="text-danger"
+            >
+              Phone Number must be a valid 10-digit number.
+            </div>
+          </div>
+
+          <!-- Email Address -->
+          <div class="col-lg-6 col-md-6 mb-30">
+            <input
+              id="emailAddress"
+              type="email"
+              formControlName="emailAddress"
+              required
+              placeholder="Email Address"
+            />
+            <div
+              *ngIf="
+                enquiryForm.get('emailAddress')?.invalid &&
+                enquiryForm.get('emailAddress')?.touched
+              "
+              class="text-danger"
+            >
+              Please enter a valid email.
+            </div>
+          </div>
+
+          <!-- Gender -->
+          <div class="col-lg-12 mb-30">
+            <label class="form-label me-3">Gender:</label>
+            <div class="d-inline-block me-3">
+              <input
+                type="radio"
+                value="Male"
+                formControlName="gender"
+                required
+                id="genderMale"
+                class="d-none"
+              />
+              <label
+                for="genderMale"
+                class="form-check-label d-flex align-items-center gender-label"
+              >
+                <i class="fa fa-male me-2" aria-hidden="true"></i> Male
+              </label>
+            </div>
+            <div class="d-inline-block">
+              <input
+                type="radio"
+                value="Female"
+                formControlName="gender"
+                required
+                id="genderFemale"
+                class="d-none"
+              />
+              <label
+                for="genderFemale"
+                class="form-check-label d-flex align-items-center gender-label"
+              >
+                <i class="fa fa-female me-2" aria-hidden="true"></i> Female
+              </label>
+            </div>
+            <div
+              *ngIf="
+                enquiryForm.get('gender')?.invalid &&
+                enquiryForm.get('gender')?.touched
+              "
+              class="text-danger"
+            >
+              Gender is required.
+            </div>
+          </div>
+
+          <div class="col-lg-12 mb-30">
+            <input
+              id="address"
+              formControlName="address"
+              required
+              cols="30"
+              rows="10"
+              placeholder="Address"
+            />
+          </div>
+
+          <!-- State -->
+          <div class="col-lg-6 col-md-6 mb-30">
+            <!-- <label for="state" class="form-label">State</label> -->
+            <select
+              id="state"
+              formControlName="state"
+              class="form-select"
+              aria-label="Select State"
+              required
+              (change)="onStateChange($event)"
+            >
+              <option value="" disabled>Select State</option>
+              <option *ngFor="let state of states" [value]="state">
+                {{ state }}
+              </option>
+            </select>
+            <div
+              *ngIf="
+                enquiryForm.get('state')?.invalid &&
+                enquiryForm.get('state')?.touched
+              "
+              class="text-danger mt-1"
+            >
+              Please select a state.
+            </div>
+          </div>
+
+          <!-- City -->
+          <div class="col-lg-6 col-md-6 mb-30">
+            <select id="city" formControlName="city" class="form-select">
+              <option value="" disabled>Select City</option>
+              <option *ngFor="let city of filteredCities" [value]="city">
+                {{ city }}
+              </option>
+            </select>
+          </div>
+
+          <!-- Education Level -->
+          <div class="col-lg-6 col-md-6 mb-30">
+            <select
+              id="educationLevel"
+              formControlName="educationLevel"
+              class="form-select"
+            >
+              <option value="" disabled>Select Education Level</option>
+              <option *ngFor="let level of educationLevels" [value]="level">
+                {{ level }}
+              </option>
+            </select>
+          </div>
+
+          <!-- Intrested for -->
+          <div class="col-lg-6 col-md-6 mb-30">
+            <select
+              id="interestedFor"
+              formControlName="interestedFor"
+              class="form-select"
+            >
+              <option value="" disabled>Intrested For</option>
+              <option
+                *ngFor="let interestedFor of interestedFor"
+                [value]="interestedFor"
+              >
+                {{ interestedFor }}
+              </option>
+            </select>
+          </div>
+
+          <!-- Reference -->
+          <div class="col-lg-12 mb-30">
+            <input
+              id="reference"
+              formControlName="reference"
+              cols="30"
+              rows="10"
+              required
+              placeholder="From where did you hear about us?"
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <div class="col-lg-12 mt-20 d-flex justify-content-between">
+            <button
+              type="reset"
+              class="theme_btn message_btn"
+              (click)="onReset()"
+            >
+              Reset
+            </button>
+            <button
+              type="submit"
+              [disabled]="enquiryForm.invalid"
+              class="theme_btn message_btn"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="contact-img contact-img-02 mb-30">
+        <img
+          class="img-fluid"
+          src="assets/img/contact/Enquiryform.svg"
+          alt="Enquiry"
+        />
+      </div>
+    </div>
+  </div>
+</div>

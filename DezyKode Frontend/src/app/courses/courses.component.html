@@ -1,0 +1,113 @@
+<!--page-title-area start-->
+<section
+  class="page-title-area d-flex align-items-end"
+  style="background-image: url(assets/img/page-title-bg/Courses.jpg)"
+>
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="col-lg-12">
+        <div class="page-title-wrapper mb-50">
+          <h1 class="page-title mb-25">Training & Internship</h1>
+          <div class="breadcrumb-list">
+            <ul class="breadcrumb">
+              <li><a routerLink="/home">Home -</a></li>
+              <li><a routerLink="/courses">Training & Internship</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  class="feature-course gradient-bg pt-50 pb-50 pt-md-95 pb-md-75 pt-xs-40 pb-xs-40"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="section-title text-center mb-30">
+          <h2>Explore our Popular Programs</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xl-12 text-center">
+        <div class="portfolio-menu mb-60">
+          <button class="gf_btn active" (click)="filterCategory('*')">
+            All
+          </button>
+          <button class="gf_btn" (click)="filterCategory('cat1')">UI/UX</button>
+          <button class="gf_btn" (click)="filterCategory('cat2')">
+            Data Analytics
+          </button>
+          <button class="gf_btn" (click)="filterCategory('cat3')">
+            Full Stack Development
+          </button>
+          <button class="gf_btn" (click)="filterCategory('cat4')">
+            Data Science
+          </button>
+          <button class="gf_btn" (click)="filterCategory('cat5')">
+            Digital Marketing
+          </button>
+          <button class="gf_btn" (click)="filterCategory('cat6')">
+            Software Testing
+          </button>
+          <button class="gf_btn" (click)="filterCategory('cat7')">
+            Business Analytics
+          </button>
+          <button class="gf_btn" (click)="filterCategory('cat8')">
+            MERN-Stack
+          </button>
+          <button class="gf_btn" (click)="filterCategory('cat9')">
+            MEAN-Stack
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="grid row">
+      <div
+        *ngFor="let course of filteredCourses"
+        class="col-lg-4 col-md-6 grid-item"
+        [ngClass]="course.category"
+      >
+        <div class="z-gallery z-gallery-two gallery-03 mb-30">
+          <div class="z-gallery__thumb mb-20">
+            <a (click)="navigateToCourse(course)">
+              <img class="img-fluid" [src]="course.image" [alt]="course.name" />
+            </a>
+          </div>
+          <div class="z-gallery__content pos-rel">
+            <div
+              class="course__meta d-flex align-items-center justify-content-between mb-15"
+            >
+              <span>
+                <img
+                  class="icon"
+                  src="assets/img/icon/time.svg"
+                  alt="course-meta"
+                />
+                {{ course.duration }}
+              </span>
+            </div>
+            <h4 class="sub-title mb-15">
+              <a (click)="navigateToCourse(course)"> {{ course.name }}</a>
+            </h4>
+            <p class="mb-20">
+              {{ course.description }}
+            </p>
+            <a (click)="navigateToCourse(course)" class="read_more float-end"
+              >Read More...</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-xxl-12 mt-20 text-center mb-20">
+        <a routerLink="/courses" class="theme_btn">Explore More</a>
+      </div>
+    </div> -->
+  </div>
+</section>
